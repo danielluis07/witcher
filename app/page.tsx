@@ -32,13 +32,16 @@ export default function Home() {
           <h1 className="text-lg text-center mt-8 md:text-2xl">
             E-book: Um Guia Ilustrativo Sobre o Universo de The Witcher
           </h1>
-          <div className="w-1/3 mx-auto mt-4">
-            <a href="https://go.hotmart.com/M72554574D" target="blank">
-              <button className="p-2 bg-gradient-to-r from-gray-100 to-gray-300 w-full text-red-600 font-medium text-sm md:text-base rounded-sm">
-                SAIBA MAIS
-              </button>
-            </a>
-          </div>
+          <form
+            className="w-1/3 mx-auto mt-4"
+            action="https://go.hotmart.com/M72554574D"
+            target="blank">
+            <input
+              className="p-2 bg-gradient-to-r from-gray-100 to-gray-300 w-full text-red-600 font-medium cursor-pointer text-sm md:text-base rounded-sm"
+              type="submit"
+              value="Saiba mais"
+            />
+          </form>
         </div>
       </div>
       {/* texto */}
@@ -145,13 +148,17 @@ export default function Home() {
         <div className="w-[200px] mx-auto my-10">
           <Image src={capa} alt="capa" />
         </div>
-        <div className="w-1/3 mx-auto mt-4">
-          <a href="https://go.hotmart.com/M72554574D" target="blank">
-            <button className="p-2 bg-gradient-to-r from-gray-100 to-gray-300 w-full text-red-600 font-medium text-sm md:text-base rounded-sm">
-              COMPRE AGORA
-            </button>
-          </a>
-        </div>
+
+        <form
+          className="w-1/3 mx-auto mt-4"
+          action="https://go.hotmart.com/M72554574D"
+          target="blank">
+          <input
+            className="p-2 bg-gradient-to-r from-gray-100 to-gray-300 w-full text-red-600 font-medium cursor-pointer text-sm md:text-base rounded-sm"
+            type="submit"
+            value="Saiba mais"
+          />
+        </form>
       </div>
     </main>
   );
